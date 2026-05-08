@@ -10,6 +10,7 @@ const Navbar = () => {
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const currentLang = i18n.language?.split('-')[0].toLowerCase() || 'en';
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -63,7 +64,7 @@ const Navbar = () => {
               className="flex items-center gap-2 px-3 py-1.5 rounded-full border bg-card/50 hover:bg-muted transition-all text-xs md:text-sm font-medium backdrop-blur-sm"
             >
               <Languages size={16} />
-              <span className="uppercase">{i18n.language}</span>
+              <span className="uppercase">{currentLang}</span>
               <ChevronDown size={14} className={cn("transition-transform", isLangOpen && "rotate-180")} />
             </button>
 
@@ -80,11 +81,11 @@ const Navbar = () => {
                       }}
                       className={cn(
                         "w-full px-4 py-2 text-start text-sm hover:bg-muted transition-colors flex items-center justify-between",
-                        i18n.language === lang.code && "text-primary font-bold bg-primary/5"
+                        currentLang === lang.code && "text-primary font-bold bg-primary/5"
                       )}
                     >
                       {lang.label}
-                      {i18n.language === lang.code && <div className="w-1.5 h-1.5 rounded-full bg-primary" />}
+                      {currentLang === lang.code && <div className="w-1.5 h-1.5 rounded-full bg-primary" />}
                     </button>
                   ))}
                 </div>

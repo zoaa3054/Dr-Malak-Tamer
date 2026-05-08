@@ -7,10 +7,11 @@ import { AuroraBackground } from '../ui/aurora-background';
 
 const Hero = ({ data, socials }) => {
   const { i18n } = useTranslation();
-  const lang = i18n.language.charAt(0).toUpperCase() + i18n.language.slice(1);
+  const langCode = (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0].toLowerCase();
+  const langKey = langCode.charAt(0).toUpperCase() + langCode.slice(1);
 
-  const title = data[`title${lang}`];
-  const subtitle = data[`subtitle${lang}`];
+  const title = data[`title${langKey}`] || data.titleEn;
+  const subtitle = data[`subtitle${langKey}`] || data.subtitleEn;
 
   return (
     <AuroraBackground>
