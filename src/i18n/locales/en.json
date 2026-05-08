@@ -1,0 +1,25 @@
+{
+  "common": {
+    "doctor_name": "Dr. Malak Tamer",
+    "physiotherapist": "Physiotherapist",
+    "about": "About",
+    "certificates": "Certificates",
+    "accomplishments": "Accomplishments",
+    "contact": "Contact",
+    "send_email": "Send Email",
+    "admin_login": "Admin Login",
+    "password": "Password",
+    "login": "Login",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "logout": "Logout",
+    "home": "Home",
+    "hero_title": "Modern Physiotherapy for a Better Life",
+    "hero_subtitle": "Helping you recover, move better, and live pain-free with expert care and personalized treatments.",
+    "footer_text": "© 2026 Dr. Malak Tamer. All rights reserved.",
+    "care": "Care",
+    "expertise": "Expertise",
+    "about_title": "Passionate about your movement and health"
+  }
+}
