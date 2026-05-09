@@ -15,7 +15,7 @@ const Hero = ({ data, socials }) => {
 
   return (
     <AuroraBackground>
-      <section id="hero" className="relative w-full min-h-screen pt-32 pb-0 overflow-hidden flex flex-col justify-end">
+      <section id="hero" className="relative w-full min-h-screen pt-40 md:pt-32 pb-0 overflow-hidden flex flex-col justify-start md:justify-end">
         <div className="container relative z-10 mx-auto px-4 flex flex-col md:flex-row items-center md:items-end gap-12">
           <div className="flex-1 space-y-6 text-center md:text-start pb-20 md:pb-32 z-10">
             <motion.div
@@ -68,7 +68,7 @@ const Hero = ({ data, socials }) => {
               <img
                 src={profileImg}
                 alt="Dr. Malak Tamer"
-                className="relative z-10 w-full h-auto max-h-[600px] md:max-h-[850px] object-contain filter drop-shadow-[0_20px_50px_rgba(0,0,0,0.1)] md:drop-shadow-[0_40px_100px_rgba(15,23,42,0.15)] dark:drop-shadow-[0_40px_80px_rgba(255,255,255,0.03)] transition-all duration-700 hover:scale-[1.01]"
+                className="relative z-10 w-full h-auto max-h-[450px] md:max-h-[850px] object-contain filter drop-shadow-[0_20px_50px_rgba(0,0,0,0.1)] md:drop-shadow-[0_40px_100px_rgba(15,23,42,0.15)] dark:drop-shadow-[0_40px_80px_rgba(255,255,255,0.03)] transition-all duration-700 hover:scale-[1.01]"
               />
             </div>
           </motion.div>
