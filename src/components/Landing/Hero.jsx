@@ -56,7 +56,7 @@ const Hero = ({ data, socials }) => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="flex-1 relative w-full h-full flex items-end justify-center md:justify-end overflow-visible"
           >
-            <div className="relative w-full max-w-[800px] flex items-end justify-center md:translate-x-24 rtl:md:-translate-x-24">
+            <div className="relative w-full max-w-[600px] flex items-end justify-center md:translate-x-12 rtl:md:-translate-x-12">
               {/* Professional Multi-layered Lighting */}
               <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[120%] aspect-square bg-gradient-to-tr from-primary/20 via-accent/10 to-transparent rounded-full blur-[100px] -z-10 animate-pulse duration-[4s]" />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] aspect-square bg-white/40 dark:bg-primary/5 rounded-full blur-[120px] -z-10" />
@@ -68,7 +68,7 @@ const Hero = ({ data, socials }) => {
               <img
                 src={profileImg}
                 alt="Dr. Malak Tamer"
-                className="relative z-10 w-full h-auto max-h-[700px] md:max-h-[950px] object-contain filter drop-shadow-[0_20px_50px_rgba(0,0,0,0.1)] md:drop-shadow-[0_40px_100px_rgba(15,23,42,0.15)] dark:drop-shadow-[0_40px_80px_rgba(255,255,255,0.03)] transition-all duration-700 hover:scale-[1.01]"
+                className="relative z-10 w-full h-auto max-h-[600px] md:max-h-[850px] object-contain filter drop-shadow-[0_20px_50px_rgba(0,0,0,0.1)] md:drop-shadow-[0_40px_100px_rgba(15,23,42,0.15)] dark:drop-shadow-[0_40px_80px_rgba(255,255,255,0.03)] transition-all duration-700 hover:scale-[1.01]"
               />
             </div>
           </motion.div>
